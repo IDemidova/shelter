@@ -1,0 +1,68 @@
+.friends {
+    @include desktop-section-padding;
+    background-color: $bg-light-gray-color;
+
+    @include mobile {
+        @include mobile-section-padding;
+    }
+}
+
+.friends_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friends_title {
+    text-align: center;
+    @include georgia-regular;
+    @include desktop-section-title;
+    color: $fonts-brown-color;
+    margin-bottom: 60px;
+
+    @include mobile {
+        margin-bottom: 42px;
+    }
+}
+
+.friends_inner {
+    width: 100%;
+}
+
+.friends_slider {
+    display: grid;
+}
+
+.friends_slider_item {
+    background-color: $fonts-white-color;
+    border-radius: 9px;
+    transition: $animation-duration;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $main-white-color;
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+
+        .main_button {
+            @include main-button-hover-effects;
+        }
+    }
+}
+
+.friends_slider_item_image {
+    border-radius: 9px 9px 0px 0px;
+}
+
+.friends_slider_item_desc {
+    text-align: center;
+    padding: 30px;
+}
+
+.friends_slider_item_desc_title {
+    @include georgia-regular;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: $fonts-brown-color;
+    margin-bottom: 30px;
+}

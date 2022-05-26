@@ -1,0 +1,93 @@
+// HEADER
+.index_header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include tablet {
+        padding-top: 30px;
+    }
+}
+
+.index_header_logo_title {
+    color: $main-beige-color;
+}
+
+.index_header_logo_desc {
+    color: $main-white-color;
+}
+
+.index_header_navigation_list_item_link {
+    color: $fonts-gray-color;
+
+    &:hover {
+        color: $fonts-white-color;
+    }
+}
+
+.index_header_navigation_list_item_link_active {
+    color: $fonts-white-color;
+}
+
+// FRIENDS
+.index_friends_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @include mobile {
+        display: block;
+        position: relative;
+        padding-bottom: 72px;
+        margin-bottom: 42px;
+    }
+}
+
+.index_friends_slider {
+    grid-template-columns: repeat(3, 270px);
+    gap: 90px;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 270px);
+        gap: 40px;
+    }
+
+    @include mobile {
+        grid-template-columns: 270px;
+        gap: 0;
+        justify-content: center;
+    }
+}
+
+.index_friends_slider_item {
+    &:last-child {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &:not(:first-child) {
+        @include mobile {
+            display: none;
+        }
+    }
+}
+
+.index_friends_slider_button {
+    @include mobile {
+        position: absolute;
+        bottom: 0;
+    }
+
+    &_prev {
+        @include mobile {
+            left: 58px;
+        }
+    }
+
+    &_next {
+        @include mobile {
+            right: 58px;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+.donation {
+    @include desktop-section-padding;
+    background-color: $bg-light-gray-color;
+
+    @include mobile {
+        @include mobile-section-padding;
+    }
+}
+
+.donation_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @include tablet {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    @include mobile {
+        gap: 42px;
+    }
+}
+
+.donation_inner {
+    width: 380px;
+
+    @include mobile {
+        width: 100%;
+        padding: 0 9px;
+    }
+}
+
+.donation_title {
+    @include georgia-regular;
+    @include desktop-section-title;
+    color: $fonts-brown-color;
+    margin-bottom: 20px;
+
+    @include mobile {
+        text-align: center;
+    }
+}
+
+.donation_info_bank {
+    @include georgia-regular;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: $fonts-brown-color;
+    margin-bottom: 20px;
+
+    @include mobile {
+        text-align: center;
+        letter-spacing: 0;
+        margin-bottom: 22px;
+    }
+}
+
+.donation_info_account {
+    @include georgia-regular;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $fonts-brown-color;
+    padding: 10px 15px 10px 60px;
+    background-color: $main-beige-color;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    transition: background-color $animation-duration;
+
+    &::before {
+        content: url(../assets/images/icons/donation_account_icon.svg);
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+
+    &:hover {
+        background-color: $main-ligth-beige-color;
+    }
+
+    @include mobile {
+        font-size: 15px;
+        line-height: 110%;
+        padding: 13px 15px 13px 60px;
+        margin-bottom: 22px;
+    }
+}
+
+.donation_info_legal {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #B2B2B2;
+
+    @include mobile {
+        text-align: justify;
+    }
+}
+
+.donation_image {
+    @include tablet {
+        order: 1;
+    }
+
+    @include mobile {
+        width: 260px;
+        height: 135px;
+    }
+}

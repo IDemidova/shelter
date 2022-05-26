@@ -1,0 +1,35 @@
+@font-face {
+    src: url(../assets/fonts/Georgia_Regular.woff) format('woff'),
+        url(../assets/fonts/Georgia_Regular.ttf) format('ttf');
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../assets/fonts/Georgia_Bold.woff) format('woff'),
+        url(../assets/fonts/Georgia_Bold.ttf) format('ttf');
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../assets/fonts/Arial_Regular.woff) format('woff'),
+        url(../assets/fonts/Arial_Regular.ttf) format('ttf');
+    font-family: 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../assets/fonts/Arial_Italic.woff) format('woff'),
+        url(../assets/fonts/Arial_Italic.ttf) format('ttf');
+    font-family: 'Arial';
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}

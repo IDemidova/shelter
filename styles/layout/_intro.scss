@@ -1,0 +1,68 @@
+.intro_wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+.intro_inner {
+    width: 460px;
+    padding-top: 163px;
+
+    @include tablet {
+        padding-top: 0;
+        align-self: center;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include mobile {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 105px;
+    }
+}
+
+.intro_title {
+    @include georgia-regular;
+    font-size: 44px;
+    line-height: 130%;
+    color: $main-white-color;
+    width: 310px;
+    margin-bottom: 42px;
+
+    @include mobile {
+        font-size: 25px;
+        letter-spacing: 0.06em;
+    }
+}
+
+.intro_desc {
+    @include arial-regular;
+    font-size: 15px;
+    line-height: 160%;
+    color: $fonts-gray-color;
+    margin-bottom: 42px;
+}
+
+.intro_make_friend_button {
+    @include tablet {
+        align-self: center;
+    }
+}
+
+.intro_image {
+    @include tablet {
+        width: 569px;
+        height: 593px;
+        align-self: flex-end;
+    }
+
+    @include mobile {
+        width: 260px;
+        height: 272px;
+    }
+}

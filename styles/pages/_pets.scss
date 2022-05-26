@@ -1,0 +1,115 @@
+// HEADER
+.pets_header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $main-white-color;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.pets_header_logo_title {
+    color: $fonts-brown-color;
+}
+
+.pets_header_logo_desc {
+    color: $fonts-black-color;
+}
+
+.pets_header_navigation_list_item_link {
+    color: $fonts-brown-color;
+
+    &:hover {
+        color: $fonts-black-color;
+    }
+}
+
+.pets_header_navigation_list_item_link_active {
+    color: $fonts-black-color;
+}
+
+// FRIENDS
+.pets_friends {
+    @include tablet {
+        padding-bottom: 78px;
+    }
+
+    @include mobile {
+        padding-bottom: 42px;
+    }
+}
+
+.pets_friends_title {
+    @include tablet {
+        margin-bottom: 30px;
+    }
+
+    @include mobile {
+        margin-bottom: 42px;
+    }
+}
+
+.pets_friends_inner {
+    margin-bottom: 60px;
+
+    @include tablet {
+        margin-bottom: 40px;
+    }
+
+    @include mobile {
+        margin-bottom: 42px;
+    }
+}
+
+.pets_friends_slider {
+    grid-template-columns: repeat(4, 270px);
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+    position: relative;
+    z-index: 0;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 270px);
+        justify-content: center;
+    }
+
+    @include mobile {
+        grid-template-columns: 270px;
+    }
+}
+
+.pets_friends_slider_item {
+
+    &:last-child,
+    &:nth-last-child(2) {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &:not(:nth-child(-n+3)) {
+        @include mobile {
+            display: none;
+        }
+    }
+}
+
+.friends_slider_pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    @include mobile {
+        gap: 10px;
+    }
+}
+
+.friends_slider_pagination_page_indicator {
+    display: block;
+    @include georgia-regular;
+    font-size: 20px;
+    line-height: 52px;
+    letter-spacing: 0.06em;
+    background-color: $main-beige-color;
+    cursor: default;
+}

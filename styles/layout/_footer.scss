@@ -1,0 +1,143 @@
+.footer {
+    padding-top: 40px;
+    background: $bg-gradient;
+
+    @include tablet {
+        padding-top: 30px;
+    }
+
+    @include mobile {
+        padding-top: 30px;
+    }
+}
+
+.footer_wrapper {
+    display: grid;
+    grid-template-columns: 280px repeat(2, 300px);
+    justify-content: space-between;
+    grid-template-rows: 106px 46px 26px 1fr;
+    row-gap: 35px;
+    align-items: center;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+        column-gap: 40px;
+        grid-template-rows: 90px 45px 31px 1fr;
+        row-gap: 33px;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: 64px repeat(2, 32px) 64px 46px 32px 1fr;
+        justify-items: center;
+        row-gap: 40px;
+    }
+}
+
+.footer_title {
+    @include georgia-regular;
+    @include desktop-section-title;
+    color: $main-white-color;
+    padding-top: 16px;
+
+    @include tablet {
+        padding-top: 0;
+    }
+
+    @include mobile {
+        width: 270px;
+        text-align: center;
+    }
+}
+
+.footer_title_questions {
+    @include mobile {
+        order: 1;
+    }
+}
+
+.footer_title_visit {
+    @include mobile {
+        order: 4;
+    }
+}
+
+.footer_contacts {
+    @include georgia-regular;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $main-beige-color;
+}
+
+.footer_contacts_info {
+    display: flex;
+    align-items: center;
+
+    &::before {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+
+.footer_contacts_info_email {
+    &::before {
+        content: url(../assets/images/icons/footer_email_icon.svg);
+    }
+
+    @include mobile {
+        order: 2;
+    }
+}
+
+.footer_contacts_info_phone {
+    &::before {
+        content: url(../assets/images/icons/footer_phone_icon.svg);
+    }
+
+    @include mobile {
+        order: 3;
+    }
+}
+
+.footer_contacts_info_address {
+    &::before {
+        content: url(../assets/images/icons/footer_address_icon.svg);
+    }
+
+    @include mobile {
+        justify-self: start;
+    }
+}
+
+.footer_contacts_info_address_boston {
+    @include mobile {
+        order: 5;
+    }
+}
+
+.footer_contacts_info_address_london {
+    @include mobile {
+        order: 6;
+    }
+}
+
+.footer_image {
+    grid-column: 3/4;
+    grid-row: 1/5;
+
+    @include tablet {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        padding: 32px calc(50% - 300px/2) 0;
+    }
+
+    @include mobile {
+        width: 260px;
+        height: 269px;
+        padding: 0;
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+}

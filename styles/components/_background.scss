@@ -1,0 +1,15 @@
+.background {
+    width: 100%;
+    height: 908px;
+    background: $bg-gradient;
+    position: absolute;
+    z-index: -1;
+
+    @include tablet {
+        height: 1165px;
+    }
+
+    @include mobile {
+        height: 823px;
+    }
+}

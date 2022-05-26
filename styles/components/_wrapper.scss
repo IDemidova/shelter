@@ -1,0 +1,12 @@
+.wrapper {
+    width: $desktop-width;
+    margin: $auto-margin;
+
+    @include tablet {
+        width: $tablet-width;
+    }
+
+    @include mobile {
+        width: $mobile-width;
+    }
+}

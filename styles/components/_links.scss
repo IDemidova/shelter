@@ -1,0 +1,6 @@
+.navigation_link_active::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: $main-beige-color;
+}

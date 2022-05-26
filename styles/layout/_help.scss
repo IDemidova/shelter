@@ -1,0 +1,134 @@
+.help {
+    @include desktop-section-padding;
+    background-color: $main-white-color;
+
+    @include mobile {
+        @include mobile-section-padding;
+    }
+}
+
+.help_title {
+    @include georgia-regular;
+    @include desktop-section-title;
+    text-align: center;
+    color: $fonts-brown-color;
+    margin-bottom: 60px;
+
+    @include mobile {
+        margin-bottom: 42px;
+    }
+}
+
+.help_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 120px;
+    row-gap: 55px;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 170px);
+        column-gap: 60px;
+        row-gap: 55px;
+    }
+
+    @include mobile {
+        grid-template-columns: repeat(2, 130px);
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+}
+
+.help_list_item {
+    min-width: 60px;
+    height: 113px;
+    @include georgia-regular;
+    font-size: 20px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $fonts-brown-color;
+    padding-top: 90px;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @include mobile {
+        height: 87px;
+        padding-top: 70px;
+        font-size: 15px;
+        line-height: 110%;
+    }
+
+    &_food {
+        background-image: url(../assets/images/help_bg/big/help_bg_food.svg);
+
+        @include mobile {
+            background-image: url(../assets/images/help_bg/small/help_bg_food.svg);
+        }
+    }
+
+    &_transport {
+        background-image: url(../assets/images/help_bg/big/help_bg_transport.svg);
+
+        @include mobile {
+            background-image: url(../assets/images/help_bg/small/help_bg_transport.svg);
+        }
+    }
+
+    &_toys {
+        background-image: url(../assets/images/help_bg/big/help_bg_toys.svg);
+
+        @include mobile {
+            background-image: url(../assets/images/help_bg/small/help_bg_toys.svg);
+        }
+    }
+
+    &_bowls {
+        background-image: url(../assets/images/help_bg/big/help_bg_bowls.svg);
+
+        @include mobile {
+            background-image: url(../assets/images/help_bg/small/help_bg_bowls.svg);
+        }
+    }
+
+    &_shampoos {
+        background-image: url(../assets/images/help_bg/big/help_bg_shampoos.svg);
+
+        @include mobile {
+            background-image: url(../assets/images/help_bg/small/help_bg_shampoos.svg);
+        }
+    }
+
+    &_vitamins {
+        background-image: url(../assets/images/help_bg/big/help_bg_vitamins.svg);
+
+        @include mobile {
+            background-image: url(../assets/images/help_bg/small/help_bg_vitamins.svg);
+        }
+    }
+
+    &_medicines {
+        background-image: url(../assets/images/help_bg/big/help_bg_medicines.svg);
+
+        @include mobile {
+            background-image: url(../assets/images/help_bg/small/help_bg_medicines.svg);
+        }
+    }
+
+    &_collars {
+        background-image: url(../assets/images/help_bg/big/help_bg_collars.svg);
+
+        @include mobile {
+            background-image: url(../assets/images/help_bg/small/help_bg_collars.svg);
+        }
+    }
+
+    &_areas {
+        background-image: url(../assets/images/help_bg/big/help_bg_areas.svg);
+
+        @include mobile {
+            background-image: url(../assets/images/help_bg/small/help_bg_areas.svg);
+        }
+    }
+}

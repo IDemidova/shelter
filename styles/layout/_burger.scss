@@ -1,0 +1,137 @@
+.burger_button {
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.burger_open_button {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.burger_close_button {
+    display: block;
+}
+
+.burger {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    transform: translateX(100%);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.burger_content {
+    width: 320px;
+    min-height: 823px;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    padding-top: 30px;
+}
+
+.index_burger_content {
+    background-color: $fonts-black-color;
+}
+
+.pets_burger_content {
+    background-color: $main-white-color;
+}
+
+.burger_content_wrapper {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.burger_content_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 43px;
+    margin-bottom: 158px;
+}
+
+.burger_content_logo_title {
+    @include georgia-regular;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+}
+
+.index_burger_content_logo_title {
+    color: $main-beige-color;
+}
+
+.pets_burger_content_logo_title {
+    color: $fonts-brown-color;
+}
+
+.burger_content_logo_desc {
+    @include arial-regular;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    margin-left: 4px;
+}
+
+.index_burger_content_logo_desc {
+    color: $main-white-color;
+}
+
+.pets_burger_content_logo_desc {
+    color: $fonts-black-color;
+}
+
+.burger_content_navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger_content_navigation_item {
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.burger_content_navigation_item_link {
+    @include arial-regular;
+    font-size: 32px;
+    line-height: 160%;
+    transition: $animation-duration;
+}
+
+.index_burger_content_navigation_item_link {
+    color: $fonts-gray-color;
+
+    &:hover {
+        color: $fonts-white-color;
+    }
+}
+
+.pets_burger_content_navigation_item_link {
+    color: $fonts-brown-color;
+
+    &:hover {
+        color: $fonts-black-color;
+    }
+}
+
+.index_burger_content_navigation_item_link_active {
+    color: $fonts-white-color;
+}
+
+.pets_burger_content_navigation_item_link_active {
+    color: $fonts-black-color;
+}

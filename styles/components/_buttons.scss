@@ -1,0 +1,54 @@
+.main_button {
+    display: inline-block;
+    @include georgia-regular;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+    color: $fonts-black-color;
+    padding: 13px 43px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    transition: $animation-duration;
+
+    &:hover {
+        @include main-button-hover-effects;
+    }
+}
+
+.colored_main_button {
+    background-color: $main-beige-color;
+}
+
+.bordered_main_button {
+    border-color: $main-beige-color;
+}
+
+.round_button {
+    width: 52px;
+    height: 52px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.active_round_button {
+    color: $fonts-black-color;
+    border: 2px solid $main-beige-color;
+    cursor: pointer;
+    transition: $animation-duration;
+
+    &:hover {
+        background-color: $main-ligth-beige-color;
+        border-color: transparent;
+    }
+}
+
+.round_button_hover {
+    background-color: $main-ligth-beige-color;
+    border-color: transparent;
+}
+
+.disabled_round_button {
+    color: $fonts-gray-color;
+    border: 2px solid $fonts-gray-color;
+}

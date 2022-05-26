@@ -1,0 +1,131 @@
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+        background: transparent;
+    }
+
+    75% {
+        transform: translateX(0);
+        background: transparent;
+    }
+
+    100% {
+        transform: translateX(0);
+        background: $bg-blackout;
+    }
+}
+
+.slide_in {
+    animation: slide-in $animation-duration*2 forwards;
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0);
+        background: $bg-blackout;
+    }
+
+    25% {
+        transform: translateX(0);
+        background: transparent;
+    }
+
+    100% {
+        transform: translateX(100%);
+        background: transparent;
+    }
+}
+
+.slide_out {
+    animation: slide-out $animation-duration*2 forwards;
+}
+
+@keyframes rotate-in {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.rotate_in {
+    animation: rotate-in $animation-duration*2 forwards;
+}
+
+@keyframes rotate-out {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.rotate_out {
+    animation: rotate-out $animation-duration*2 forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade {
+    animation: fade $animation-duration;
+}
+
+@keyframes increase {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+        background: none;
+    }
+
+    75% {
+        transform: scale(1);
+        opacity: 1;
+        background: none;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        background: $bg-blackout;
+    }
+}
+
+.increase {
+    animation: increase $animation-duration forwards;
+}
+
+@keyframes decrease {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        background: $bg-blackout;
+    }
+
+    25% {
+        transform: scale(1);
+        opacity: 0;
+        background: none;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+        background: none;
+    }
+}
+
+.decrease {
+    animation: decrease $animation-duration forwards;
+}

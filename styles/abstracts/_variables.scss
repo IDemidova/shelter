@@ -1,0 +1,25 @@
+$desktop-width: 1200px;
+$tablet-width: 708px;
+$mobile-width: 300px;
+
+$auto-margin: 0 auto;
+
+$main-black-color: #4C4C4C;
+$main-white-color: #FFFFFF;
+$main-beige-color: #F1CDB3;
+$main-ligth-beige-color: #FDDCC4;
+
+$bg-gradient: url(../assets/images/transparent_bg.png),
+radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
+#211F20;
+$bg-blackout: url(../assets/images/transparent_bg.png),
+rgba(41, 41, 41, 0.6);
+$bg-light-gray-color: #F6F6F6;
+
+$fonts-gray-color: #CDCDCD;
+$fonts-white-color: #FAFAFA;
+
+$fonts-brown-color: #545454;
+$fonts-black-color: #292929;
+
+$animation-duration: 0.8s;
